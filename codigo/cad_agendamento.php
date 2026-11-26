@@ -73,7 +73,7 @@
             $servico = mysqli_stmt_get_result($comando);
 
             while ($servicos = mysqli_fetch_array($servico)) {
-                $id_servico= $servicos['id_servicos'];
+                $id_servicos= $servicos['id_servicos'];
                 $nome = $servicos['nome'];
                 echo "<option value='$id_servicos'>$nome</option>";
             }

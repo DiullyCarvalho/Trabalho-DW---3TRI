@@ -26,7 +26,7 @@
             $tutores = mysqli_stmt_get_result($comando);
 
             while ($tutor = mysqli_fetch_array($tutores)) {
-                $id_tutor= $tutor['idtutor'];
+                $id_tutor= $tutor['id_tutor'];
                 $nome = $tutor['nome'];
                 echo "<option value='$id_tutor'>$nome</option>";
             }

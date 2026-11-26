@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="salvar_funcionario.php" method="post" enctype="multipart/form-data">
+    <form action="salvar_servico.php" method="post" enctype="multipart/form-data">
 
 
         Nome: <br>

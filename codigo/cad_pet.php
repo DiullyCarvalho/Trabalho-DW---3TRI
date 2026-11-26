@@ -49,7 +49,7 @@
         <input type="text" name="vacinado"><br>
 
         Castrado: <br>
-        <input type="text" name="vacinado"> <br>
+        <input type="text" name="castrado"> <br>
 
 
         <input type="submit" value="Salvar">

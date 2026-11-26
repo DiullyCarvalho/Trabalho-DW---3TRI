@@ -12,6 +12,7 @@
     <h2> <a href="cad_pet.php"> Cadastro do Pet</a> <br> </h2>
     <h2> <a href="cad_servico.php"> Cadastro do Serviço</a><br></h2>
     <h2> <a href="cad_tutor.php"> Cadastro do Tutor</a> <br> </h2>
+    <h2> <a href="cad_agendamento.php"> Cadastro do Agendamento</a> <br> </h2>
 
 </body>
 </html>

@@ -14,7 +14,7 @@
 
         Tutor do Pet: <br>
 
-        <select name="tutor">
+        <select name="id_tutor">
 
             <?php
             require_once "conexao.php";
@@ -39,18 +39,19 @@
         Raça: <br>
         <input type="text" name="raca"><br>
 
+        Sexo biológico: <br>
+        <input type="radio" name="sexo_biologico" value="Fêmea">Fêmea <br>
+        <input type="radio" name="sexo_biologico" value="Macho">Macho <br>
+
         Idade: <br>
         <input type="text" name="idade"><br>
 
         Foto: <br>
-        <input type="file" name="foto"><br>
+        <input type="file" name="foto"><br><br>
 
-        Vacinado: <br>
-        <input type="text" name="vacinado"><br>
-
-        Castrado: <br>
-        <input type="text" name="castrado"> <br>
-
+        Informações extras:<br>
+        <input type="checkbox" name="vacinado" value="sim">Vacinado <br>
+        <input type="checkbox" name="castrado" value="sim">Castrado <br><br>
 
         <input type="submit" value="Salvar">
     </form>

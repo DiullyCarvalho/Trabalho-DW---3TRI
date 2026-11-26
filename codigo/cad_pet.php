@@ -9,8 +9,29 @@
     <form action="salvar_funcionario.php" method="post" enctype="multipart/form-data">
 
 
-        Nome do Funcionário: <br>
+        Nome do Pet: <br>
         <input type="text" name="nome"><br>
+
+        Tutor do Pet: <br>
+
+        <select name="tutor">
+
+            <?php
+            require_once "conexao.php";
+
+            $sql = "SELECT * FROM tutor";
+
+            $comando = mysqli_prepare($conexao, $sql);
+            mysqli_stmt_execute($comando);
+            $tutores = mysqli_stmt_get_result($comando);
+
+            while ($tutor = mysqli_fetch_array($tutores)) {
+                $id_tutor= $tutor['idtutor'];
+                $nome = $tutor['nome'];
+                echo "<option value='$id_tutor'>$nome</option>";
+            }
+            ?>
+        </select> <br><br>
 
         Especie: <br>
         <input type="text" name="especie"><br>

@@ -16,7 +16,7 @@
     <h2> <a href="listar_agendamento.php"> Listar do Agendamento</a> <br> </h2>
 
 
-    <h2> <a href="destruir_sessao.php"> Sair </a> <br> </h2>
+    <h4> <a href="destruir_sessao.php"> Sair </a> <br> </h4>
 
 </body>
 </html>

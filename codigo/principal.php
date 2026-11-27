@@ -15,5 +15,8 @@
     <h2> <a href="cad_agendamento.php"> Cadastro do Agendamento</a> <br> </h2>
     <h2> <a href="listar_agendamento.php"> Listar do Agendamento</a> <br> </h2>
 
+
+    <h2> <a href="destruir_sessao.php"> Sair </a> <br> </h2>
+
 </body>
 </html>

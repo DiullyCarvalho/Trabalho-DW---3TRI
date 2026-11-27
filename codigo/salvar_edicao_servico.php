@@ -2,7 +2,7 @@
 require_once "verificar_sessao.php";
 require_once "conexao.php";
 
-$idservico = $_POST['idservico'];
+$id_servico = $_POST['id_servico'];
 $idveiculo = $_POST['idveiculo'];
 $descricao = $_POST['descricao'];
 $valor = $_POST['valor'];

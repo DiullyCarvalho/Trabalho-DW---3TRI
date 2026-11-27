@@ -14,6 +14,7 @@
     <h2> <a href="cad_tutor.php"> Cadastro do Tutor</a> <br> </h2>
     <h2> <a href="cad_agendamento.php"> Cadastro do Agendamento</a> <br> </h2>
     <h2> <a href="listar_agendamento.php"> Listar do Agendamento</a> <br> </h2>
+    <h2> <a href="form_editar_servico.php"> Editar serviços</a> <br> </h2>
 
 
     <h4> <a href="destruir_sessao.php"> Sair </a> <br> </h4>

@@ -32,19 +32,26 @@
 
         <?php
         require_once "conexao.php";
-
-        $sql = "SELECT * FROM pet";
+    
+        $sql = "SELECT pet.*, tutor.nome AS nome_tutor
+        FROM pet
+        INNER JOIN tutor
+        ON pet.id_tutor = tutor.id_tutor";
 
         $resultados = mysqli_query($conexao, $sql);
 
         while ($linha = mysqli_fetch_array($resultados)) {
 
-            $id_pet = $linha['id_tutor'];
-            $ = $linha['especie'];
+            $id_pet = $linha['id_pet'];
+            $nome_tutor = $linha['nome_tutor'];
+            $nome = $linha['nome'];
+            $especie = $linha['especie'];
             $raca = $linha['raca'];
             $sexo = $linha['sexo'];
-            $email = $linha['email'];
-            $endereco = $linha['endereco'];
+            $idade = $linha['idade'];
+            $vacinado = $linha['vacinado'];
+            $castrado = $linha['castrado'];
+            
 
             echo "<tr>";
                 echo "<td>$id_tutor</td>";

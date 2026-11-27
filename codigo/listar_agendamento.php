@@ -57,6 +57,7 @@
                 echo "<td>$data</td>";
                 echo "<td>$horario</td>";
                 echo "<td>$status</td>";
+                echo "<td><a href='editar_agendamento.php?id_agendamento=$id_agendamento'>Editar</a></td>";
             echo "</tr>";
         }
             

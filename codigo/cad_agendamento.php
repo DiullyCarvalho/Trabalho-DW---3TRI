@@ -66,7 +66,7 @@ require_once "conexao.php";
 
         Serviços: <br>
 
-        <select name="id_servico">
+        <select name="id_servicos">
 
             <?php
             require_once "conexao.php";

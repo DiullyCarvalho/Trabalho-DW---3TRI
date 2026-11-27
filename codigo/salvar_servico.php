@@ -1,5 +1,7 @@
 <?php
+require_once "verificar_sessao.php";
 require_once "conexao.php";
+
 $nome = $_POST['nome'];
 $descricao = $_POST['descricao'];
 $preco = $_POST['preco'];

@@ -17,6 +17,7 @@
         <tr>
             <td>N° Agendamento</td>
             <td>Nome pet</td>
+            <td>Nome tutor</td>
             <td>Nome funcionário</td>
             <td>Serviço</td>
             <td>Data</td>
@@ -26,11 +27,13 @@
         <?php
         require_once "conexao.php";
         
-         $sql = "SELECT agendamento.*, pet.nome AS nome_pet, funcionario.nome AS nome_funcionario, servicos.nome AS nome_servico
-                FROM agendamento, pet, funcionario, servicos
-                WHERE agendamento.id_pet = pet.id_pet
-                AND agendamento.id_funcionario = funcionario.id_funcionario
-                AND agendamento.id_servicos = servicos.id_servicos";
+        $sql = "SELECT agendamento.*, pet.nome AS nome_pet, tutor.nome AS nome_tutor,
+        funcionario.nome AS nome_funcionario, servicos.nome AS nome_servico
+        FROM agendamento, pet, tutor, funcionario, servicos
+        WHERE agendamento.id_pet = pet.id_pet
+        AND pet.id_tutor = tutor.id_tutor
+        AND agendamento.id_funcionario = funcionario.id_funcionario
+        AND agendamento.id_servicos = servicos.id_servicos";
         
         $resultados = mysqli_query($conexao, $sql);
         
@@ -38,6 +41,7 @@
         while ($linha = mysqli_fetch_array($resultados)) {
             $id_agendamento = $linha['id_agendamento'];
             $nome_pet = $linha['nome_pet'];
+            $nome_tutor = $linha['nome_tutor'];
             $nome_funcionario = $linha['nome_funcionario'];
             $nome_servico = $linha['nome_servico'];
             $data = $linha['data'];
@@ -47,6 +51,7 @@
             echo "<tr>";
                 echo "<td>$id_agendamento</td>";
                 echo "<td>$nome_pet</td>";
+                echo "<td>$nome_tutor</td>";
                 echo "<td>$nome_funcionario</td>";
                 echo "<td>$nome_servico</td>";
                 echo "<td>$data</td>";
